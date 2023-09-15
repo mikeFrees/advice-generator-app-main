@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch assets/scss/main.scss assets/css/style.css",
-    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
+    "watch": "sass --watch assets/scss/main.scss assets/css/development/style.css",
+    "prefix": "postcss ./assets/css/development/style.css --use autoprefixer -d ./assets/css/prefixed/",
+    "minify": "postcss ./assets/css/prefixed/style.css --use cssnano -d ./assets/css/minified/"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   "browserslist": "last 4 versions",
   "devDependencies": {
     "autoprefixer": "^10.4.15",
+    "cssnano": "^6.0.1",
     "postcss": "^8.4.28",
     "postcss-cli": "^10.1.0",
     "sass": "^1.65.1"

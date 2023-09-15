@@ -3,13 +3,12 @@
 // -----------------------------------------------------------------------------
 
 body {
-    font-family: $manrope, "Trebuchet MS", Helvetica, sans-serif;
-    font: 800 2.8rem/3.4rem;
+    font: 800 2.8rem/3.4rem $manrope, "Trebuchet MS", Helvetica, sans-serif;
     color: $color-primary;
 }
 
 h1 {
-    font: 400 1.4rem/1.7rem;
+    font: 400 1.4rem/1.7rem $manrope, "Trebuchet MS", Helvetica, sans-serif;
     color: $color-secondary;
     text-transform: uppercase;
 }

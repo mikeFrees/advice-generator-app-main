@@ -10,26 +10,28 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
 ### The project
 
-project description here
+The challenge is to build out a advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
+
+The design
+
+![Design preview for the Advice generator app coding challenge](./assets/design%20handout/desktop-preview.jpg)
 
 ### Screenshot
 
-![](./screenshot.jpg)
+My solution
 
-Add a screenshot of the project.
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/mikeFrees/advice-generator-app-main)
+- [Live Site URL](https://mikes-advice-generator.netlify.app/)
 
 ## My process
 
@@ -38,29 +40,21 @@ Add a screenshot of the project.
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- postcss autoprefixer and cssnano
+- scss with 7 to 1 file structure
+- fontsource
 
 ### What I learned
 
-Use this section to recap over some of your major learnings
+This was my first time using an API so i mainly learned how to use the fetch API and the advice generator API.
+I also improved on my file structure and can now see the advantage of the 7 to 1 structure with scss.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Boilerplate css file](https://blog.logrocket.com/what-should-modern-css-boilerplate-look-like) - This helped me build the starting points of my _base.scss file.
+I can still organize my files better and create a good pipeline to transform mu files instead of running every npm script on its own. And i should comment my code better and commit more often. I know that this is a small project but i want to get into the habit of being organized for when i tackle a big project.
 
 ## Author
 
 - LinkedIn - [Frees Mike](https://www.linkedin.com/in/mike-frees/)
 - Frontend Mentor Profile - [Mike Frees](https://www.frontendmentor.io/profile/mikeFrees)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.

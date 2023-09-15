@@ -10,4 +10,20 @@ body {
 
 main {
     background-color: $color-background-secondary;
+    width: 60rem;
+    height: 30rem; 
+    border-radius: 15px;
+}
+
+@media (max-width: $mobile) {
+   main {
+    width: 90%;
+    height: 40%;
+   }
+}
+
+footer {
+    height: 10rem;
+    width: 100%;
+    margin-top: 5rem;
 }

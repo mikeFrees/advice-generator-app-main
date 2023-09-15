@@ -3,8 +3,19 @@
 // -----------------------------------------------------------------------------
 
 button {
-    width: 10rem;
-    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    background-color: $color-secondary;
-    content: url("../../icons/icon-dice.svg"); }
+    background-color: $color-secondary; 
+    transition: 0.5s;}
+
+button:hover {
+    box-shadow: 0px 0px 20px 0px $color-secondary;
+}
+
+button:active {
+    transform: scale(0.9);
+}
