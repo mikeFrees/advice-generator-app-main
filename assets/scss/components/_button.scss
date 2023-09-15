@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+button {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    content: url("../../icons/icon-dice.svg"); }

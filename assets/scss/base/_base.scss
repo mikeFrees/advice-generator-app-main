@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+* Removes borders from all elements.
+*/
+
+* {
+  border: none;
+}
+
+/*
+* make images behave beter by limiting their max width and making them block level
+*/
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+* removing list markers from all lists except in articles
+* removing left padding for better alignment
+* positioning the article list markers inside the element to prevent text overlap
+*/
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+/*
+* setting 1rem to 10px for easier conversion
+*/
+
+html {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+/*
+* Disable the text inflation algorithm
+*/
+
+html {
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+}
+
+/*
+* Enable smooth scrolling
+*/
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+        scroll-behavior: smooth;
+  }
+}
+
+/*
+* Provide interactive elements with a cursor
+*/
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}

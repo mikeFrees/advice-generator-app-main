@@ -4,12 +4,24 @@
   "description": "![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch assets/scss/main.scss assets/css/style.css",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
   },
   "repository": {
     "type": "git",
     "url": "\"C:\\Users\\Development\\Documents\\GitHub\\advice-generator-app-main\\.git\""
   },
   "author": "Mike Frees",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.65.1"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^5.0.12"
+  }
 }
